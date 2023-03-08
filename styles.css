@@ -18,6 +18,14 @@ header {
     background-color: yellow;
     grid-column: 1;
     grid-row: 1 / 4;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(auto-fill, 5%);
+}
+
+#sidebar > div {
+
 }
 
 main {
