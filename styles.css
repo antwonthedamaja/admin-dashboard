@@ -16,12 +16,19 @@ header {
     z-index: 2;
     display: grid;
     grid-template: 1fr 1fr / repeat(20, 1fr);
-    padding: 1.5rem;
+    align-items: center;
 }
 
 header > svg:first-child {
     width: 2rem;
     justify-self: center;
+}
+
+#searchbar {
+    border-radius: 20px;
+    grid-column: 2 / 13;
+    height: 35%;
+    background-color: rgb(229, 236, 245);
 }
 
 header > svg:nth-child(3) {
@@ -30,15 +37,63 @@ header > svg:nth-child(3) {
     grid-column: 16 / 17;
 }
 
-#search {
-    border-radius: 25px;
-    grid-column: 2 / 13;
-    height: 50%;
-    background-color: rgb(229, 236, 245);
+header > img:nth-child(4) {
+    width: 3rem;
+    grid-column: 17 / 18;
+}
+
+#name {
+    grid-column: 18 / 20;
+    font-size: 1.75rem;
+    font-weight: 700;
+    justify-self: center;
+}
+
+header > img:nth-child(6) {
+    width: 5rem;
+    grid-area: 2 / 1 / 2 / 3;
+    justify-self: end;
+}
+
+#greeting {
+    grid-area: 2 / 3 / 2 / 8;
+    justify-self: center;
+}
+
+#greeting > div:first-child {
+    font-weight: 700;
+}
+
+#greeting > div:last-child {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+header > button {
+    justify-self: end;
+    color: white;
+    font-weight: 700;
+    width: 6rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(13, 145, 216);
+}
+
+#new {
+    grid-area: 2 / 14 / 2 / 16;
+}
+
+#upload {
+    grid-area: 2 / 16 / 2 / 18;
+}
+
+#share {
+    grid-area: 2 / 18 / 2 / 20;
 }
 
 #sidebar {
-    background-color: rgb(16, 131, 193);
+    background-color: rgb(13, 145, 216);
     grid-column: 1;
     grid-row: 1 / 3;
     padding: 2rem;
