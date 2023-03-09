@@ -52,7 +52,7 @@ header > img:nth-child(4) {
 header > img:nth-child(6) {
     width: 4.5rem;
     grid-area: 2 / 1 / 2 / 3;
-    justify-self: end;
+    justify-self: center;
 }
 
 #greeting {
@@ -163,7 +163,7 @@ div#trending {
 #anncontainer, #trendcontainer {
     margin: 1rem 3rem 2rem 3rem;
     border-radius: 10px;
-    box-shadow: 2px 1px 3px 0px rgb(241, 238, 238);
+    box-shadow: 2px 2px 5px 0px rgb(224, 222, 222);
     background-color: white;
 }
 
@@ -185,5 +185,6 @@ div#trending {
     background-color: white;
     margin: 1rem;
     border-radius: 10px;
+    box-shadow: 2px 2px 5px 0px rgb(224, 222, 222);
 }
 
